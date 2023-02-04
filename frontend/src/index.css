@@ -1,0 +1,227 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Manrope:wght@400;500;700&family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Quicksand:wght@400;500;700&display=swap");
+
+/* layout */
+:root {
+  /* --primary: #1aac83; */
+  --primary: #7275a0;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Quicksand";
+}
+header {
+  /* background: #fff; */
+  background: #7275a0;
+}
+header .container {
+  max-width: 85rem;
+  margin: 0 auto;
+  padding: 0.75rem 1.25rem 0;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  justify-content: center;
+}
+header a {
+  color: #fff;
+  /* color: #7275a0; */
+  text-decoration: none;
+}
+.pages {
+  max-width: 85rem;
+  padding: 0 1.25rem;
+  margin: 0 auto;
+  /* padding: 1rem; */
+  /* margin: 1rem; */
+}
+
+.contra-font-header {
+  font-family: "Contra";
+}
+
+.contra-font-subtitle {
+  font-family: "Contra";
+  color: #7275a0;
+}
+
+.date-font {
+  color: #7275a0;
+  font-size: 0.75rem;
+}
+
+/* homepage */
+
+.home {
+  display: grid;
+  /* grid-template-columns: 3fr 1fr; */
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  margin: 1rem;
+}
+.workout-details {
+  background: #fff;
+  border-radius: 0.5rem;
+  margin: 1.25rem auto;
+  padding: 1.25rem;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+.workout-details h4 {
+  margin: 0 0 0.625rem 0;
+  font-size: 1.2em;
+  color: var(--primary);
+  text-transform: lowercase;
+}
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+  text-transform: lowercase;
+}
+.workout-details span {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  /* background: #f1f1f1; */
+  /* padding: 6px; */
+  /* border-radius: 50%; */
+  /* color: #333; */
+  color: #7275a0;
+}
+
+/* new workout form */
+label,
+input {
+  display: block;
+}
+input {
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 0 1.5rem;
+  font-family: "Quicksand";
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-family: "Contra";
+}
+div.error {
+  padding: 0.75rem 1rem;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 0.5rem;
+  margin: 1.25rem 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
+/**
+ * Basic CSS Media Query Template
+ * TODO: I should probably use Sass...
+ * Author: Michael Vieth
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet 
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+}
+
+@media all and (max-width: 480px) {
+  header .container {
+    max-width: 85rem;
+    margin: 0 auto 1.25rem;
+    /* padding: 0.75rem 1.25rem; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: center;
+  }
+
+  .pages {
+    max-width: 85rem;
+    padding: 0 1.25rem;
+    margin: 0 auto 3.25rem;
+    /* padding: 1rem; */
+    /* margin: 1rem; */
+  }
+
+  .home {
+    display: block;
+    /* grid-template-columns: 3fr 1fr; */
+    /* grid-template-columns: 1fr 3fr; */
+    /* gap: 2rem; */
+  }
+
+  .workout-details {
+    background: #fff;
+    border-radius: 0.5rem;
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Portrait */
+@media screen and (orientation: portrait) {
+  /* Portrait styles here */
+}
+/* Landscape */
+@media screen and (orientation: landscape) {
+  /* Landscape styles here */
+}
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+}
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation: landscape) {
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation: portrait) {
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation: landscape) {
+}
